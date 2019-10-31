@@ -25,6 +25,23 @@ var data = {
     a: 1
 };
 
-var vm = new Vue({
+var vm1 = new Vue({
     data: data
-})
+});
+
+var vm = new Vue({
+    el: '#demo',
+    data: {
+        firstName: 'Foo',
+        lastName: 'Bar',
+        fullName: 'Foo Bar'
+    },
+    computed: {
+        fullName: function () {
+            return this.firstName + ' ' + this.lastName
+        }
+    }
+});
+
+
+
