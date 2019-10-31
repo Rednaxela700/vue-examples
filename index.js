@@ -45,5 +45,17 @@ app4.todos.push({text: 'Keep fucking order in fucking arr for fuck sake'});
 
 
 
-app();
-app2();
+const app5 = new Vue ({
+    el: '#app5',
+    data: {
+        msg: 'Hello Vue.js'
+    },
+    methods: {
+        reverseMessage: function () {
+            this.msg = this.msg.split('').reverse().join('')
+        }
+    }
+})
+
+app;
+app2;
