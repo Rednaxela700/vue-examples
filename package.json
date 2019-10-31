@@ -1,0 +1,17 @@
+{
+  "name": "first-vue",
+  "version": "0.1.0",
+  "description": "My first vue tryouts",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "vue"
+  ],
+  "author": "Alexander Walczuk",
+  "license": "MIT",
+  "dependencies": {
+    "vue": "^2.6.10"
+  }
+}
