@@ -55,7 +55,12 @@ const app5 = new Vue ({
             this.msg = this.msg.split('').reverse().join('')
         }
     }
-})
+});
 
-app;
-app2;
+
+const app6 = new Vue ({
+    el: '#app6',
+    data: {
+        message: 'Hello Vue!'
+    }
+});
