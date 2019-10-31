@@ -8,4 +8,16 @@ const app = new Vue({
     }
 });
 
+app.message = 'hahahahah';
+
+const app2 = new Vue({
+    el: '#app2',
+    data: {
+        message : `You loaded this page on ${new Date().toLocaleString()}`
+    }
+});
+
+
+
 app();
+app2();
