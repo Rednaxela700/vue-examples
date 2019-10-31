@@ -20,3 +20,11 @@ var app7 = new Vue({
         ]
     }
 });
+//assigned data object as a key in next vue
+var data = {
+    a: 1
+};
+
+var vm = new Vue({
+    data: data
+})
