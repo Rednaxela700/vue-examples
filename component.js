@@ -3,11 +3,9 @@
  */
 //Define a new component called todo-item
 Vue.component('todo-item', {
-    template: '<li>This is a todo</li>'
+    //the todo component accepts a prop
+    //which is like a custom attribute
+    //this prop is called a todo
+    props: ['todo'],
+    template: '<li>{{todo.text}}</li>'
 });
-
-Vue.component('todo-list', {
-    template:'<ol>' +
-    '<todo-item></todo-item>' +
-    '</ol>'
-})
